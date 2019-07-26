@@ -1,0 +1,172 @@
+.campaign-cat-section {
+  padding-bottom: 90px;
+  .category-page-header {
+    position: relative;
+    margin-bottom: 140px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -53px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      background: #E0E0E0;
+    }
+  }
+  .campaign-cat-section__cat-thumb {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    height: 460px;
+    background-size: cover !important;
+  }
+  .campaign-cat-section__title {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    h1 {
+      font-family: "Assistant-Bold";
+      line-height: normal;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #000000;
+      &:after {
+        display: block;
+        position: relative;
+        content: '';
+        width: 70px;
+        height: 2px;
+        background-color: #E0E0E0;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+  }
+  .campaign-cat-section__cat-name {
+    line-height: normal;
+    font-size: 16px;
+    color: #AEAEAE;
+    margin-bottom: 26px;
+  }
+  .campaign-cat-section__description {
+    line-height: 25px;
+    font-size: 16px;
+    color: #6B6B6B;
+    margin-bottom: 30px;
+  }
+  .campaign-cat-section__button {
+    max-width: 270px;
+    width: 100%;
+    a {
+      width: 100%;
+      color: #fff;
+    }
+  }
+  .category-page-items-wrapper {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .category-item {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto 45px;
+    .category-item__thumb {
+      background-size: cover !important;
+      height: 220px;
+      width: 100%;
+    }
+    .category-item__body {
+      padding: 20px;
+      border-left: 0.5px solid #C6C6C6;
+      border-right: 0.5px solid #C6C6C6;
+      border-bottom: 0.5px solid #C6C6C6;
+    }
+    .category-item__title {
+      margin-bottom: 15px;
+      height: 30px;
+      overflow: hidden;
+      h2 {
+        font-family: "Assistant-Bold";
+        line-height: normal;
+        font-size: 24px;
+        color: #2D9CDB;
+      }
+    }
+    .category-item__location {
+      line-height: normal;
+      font-size: 16px;
+      color: #AEAEAE;
+      margin-bottom: 15px;
+    }
+    .category-item__description {
+      margin-bottom: 40px;
+      line-height: normal;
+      font-size: 16px;
+      color: #3B3B3B;
+      height: 43px;
+      overflow: hidden;
+    }
+    .category-item__progress-bar {
+      margin-bottom: 30px;
+      .progress-price {
+        .current-price {
+          color: #000;
+          font-family: "Assistant-Bold";
+          font-size: 30px;
+          line-height: 37px;
+          margin-right: 20px;
+        }
+        .all-price {
+          color: #BDBDBD;
+          font-family: "Assistant-SemiBold";
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      .progress {
+        margin: 20px 0;
+        .progress-bar {
+          background-color: $owr-main-style-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1200px) {
+  .campaign-cat-section {
+    .category-item {
+      .category-item__progress-bar {
+        .current-price {
+          font-size: 25px;
+        }
+        .all-price {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .campaign-cat-section {
+    .campaign-cat-section__title {
+      margin-top: 0;
+    }
+    .campaign-cat-section__button {
+      margin: 0 auto 40px;
+    }
+    .campaign-cat-section__cat-thumb {
+      max-width: 100%;
+      margin-left: 0;
+      height: 250px;
+    }
+    .category-page-header {
+      margin-bottom: 90px;
+    }
+  }
+}

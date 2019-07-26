@@ -1,0 +1,132 @@
+#imageGalleryModal {
+  .modal-dialog {
+    max-width: 750px;
+    max-height: 400px;
+    min-height: 100%;
+  }
+  .header-info {
+    text-align: center;
+    .slider-index {
+      display: inline-block;
+      span {
+        font-family: 'Assistant-Bold';
+        font-size: 16px;
+        color: #fff;
+        line-height: 2;
+      }
+    }
+    .close-button {
+      float: right;
+    }
+  }
+  .close {
+    cursor: pointer;
+    opacity: 1;
+    span {
+      font-family: 'Assistant-Bold';
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: underline;
+      text-shadow: 0 0 0 #fff;
+      line-height: 2;
+    }
+  }
+  .modal-body {
+    img {
+      display: block !important;
+      max-width: 100%;
+      width: auto !important;
+      margin: 0 auto;
+      height: auto;
+    }
+    #photoSlider {
+      width: 100%;
+      visibility: hidden;
+      .slick-slide {
+        div{
+          max-height: 60vh;
+          height: 60vh;
+          min-height: 368px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .arrows {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .next-arrow {
+      background: url("/wp-content/themes/owr/assets/img/right-group.png") center no-repeat;
+      background-size: cover;
+      right: 20px;
+    }
+    .prev-arrow {
+      background: url("/wp-content/themes/owr/assets/img/left-group.png") center no-repeat;
+      background-size: cover;
+      left: 20px;
+    }
+    .slick-initialized {
+      visibility: visible !important;
+    }
+  }
+  .footer-content {
+    margin-top: 20px;
+    max-height: 90px;
+    padding: 10px 40px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    #photoSliderBot {
+      visibility: hidden;
+      .mini-slide-photo-wrap {
+        padding: 0 5px;
+        display: block !important;
+      }
+      .mini-slide-photo {
+        display: block !important;
+        height: 70px;
+        object-fit: cover;
+        max-width: 100%;
+        min-width: 100%;
+        vertical-align: bottom;
+        cursor: pointer;
+      }
+    }
+    .slick-initialized {
+      visibility: visible !important;
+    }
+    .arrows-mini {
+      width: 40px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+    }
+    .next-arrow-mini {
+      background: url("/wp-content/themes/owr/assets/img/right-group.png") center no-repeat #2D9CDB;
+      right: 0;
+    }
+    .prev-arrow-mini {
+      background: url("/wp-content/themes/owr/assets/img/left-group.png") center no-repeat #2D9CDB;
+      left: 0;
+    }
+  }
+}
+
+.popup-photo-image {
+  cursor: pointer;
+}

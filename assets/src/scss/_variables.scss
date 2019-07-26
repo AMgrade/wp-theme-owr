@@ -1,0 +1,18 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+/* Colors */
+$main-white-bg-color: #ffffff;
+$main-white-font-color: #ffffff;
+$border-white-color: #ffffff;
+
+$owr-main-style-color: #2D9CDB;
+$line-color: #E0E0E0;
+$font-color-cf: #E0E0E0;
+$error-color: #eb5757;
+$ok-color: #d2ebca;

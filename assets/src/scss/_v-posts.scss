@@ -1,0 +1,15 @@
+.v-post-image-wrapper{
+	position: relative;
+}
+
+.v-post-image-wrapper img{max-width:300px;}
+
+.v-post-image-wrapper .v-image-del-icon{
+	display:none;
+    color: red;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}

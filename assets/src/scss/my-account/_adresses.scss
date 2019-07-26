@@ -1,0 +1,69 @@
+.woocommerce {
+  .woocommerce-MyAccount-content {
+    .address-dashboard {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #1D1D1D;
+    }
+    .woocommerce-Address-title {
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: right;
+        text-transform: capitalize;
+        color: #27AE60;
+      }
+    }
+    .woocommerce-address-fields {
+      input {
+        height: 46px;
+        padding: 5px;
+        border: 1px solid #BDBDBD;
+      }
+      label,span {
+        font-weight: 600;
+        line-height: normal;
+        font-size: 16px;
+        color: #4F4F4F;
+        margin-bottom: 3px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .form-row {
+      display: block;
+      float: none;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .owr-save-adresses-btn {
+      font-family: "Assistant-Bold";
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+      width: 215px;
+      display: block;
+      padding: 8px 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-left: auto;
+      margin-top: 40px;
+    }
+    .select-styled {
+      display: none;
+    }
+    address {
+      margin-bottom: 0;
+    }
+    .u-column-line {
+      width: 100%;
+      height: 1px;
+      margin-top: 17px;
+      margin-bottom: 17px;
+      background: #E0E0E0;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+/**
+Variables
+ */
+@import "variables";
+/**
+Mixins
+ */
+@import "mixins";
+@import "fonts";
+
+html {
+  height: 100%;
+}
+
+body.holder {
+  background-color: #4e545a;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  position: relative;
+  font-family: 'Assistant-Bold', sans-serif;
+  color: #fff;
+
+  .holder-wrapper {
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    height: 100vh;
+
+    .logo {
+      img {
+        max-width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .contact-form {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px 20px 80px;
+        position: relative;
+        margin: 0;
+
+        .wpcf7-not-valid-tip {
+          display: none;
+        }
+
+        .wpcf7-response-output {
+          border: 0;
+          color: #fb919b;
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          margin: 10px 0 0 0;
+          &.wpcf7-mail-sent-ok {
+            color: #fff;
+          }
+        }
+
+        .ajax-loader {
+          position: absolute;
+          bottom: 10px;
+          left: calc(50% - 10px);
+        }
+
+        .title {
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 52px;
+        }
+        .sub-title {
+          padding: 10px 20px 40px;
+          font-size: 25px;
+          line-height: 39px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+          border: 0;
+          width: 90%;
+          margin-bottom: 30px;
+          padding: 13px 0 13px 10px;
+          font-size: 24px;
+          &.wpcf7-not-valid {
+            -webkit-box-shadow: 0px 0px 5px 3px #fb919b;
+            -moz-box-shadow: 0px 0px 5px 3px #fb919b;
+            box-shadow: 0px 0px 5px 3px #fb919b;
+          }
+
+          @include placeholder {
+            color: #bdbdbd;
+            font-weight: 600;
+          }
+        }
+        .btn-blue {
+          background-color: #2D9CDB;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 0;
+          padding: 15px 25px;
+          min-width: 230px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  body.holder {
+    .holder-wrapper {
+      .logo {
+        img {
+        }
+      }
+
+      .contact-form {
+        .wpcf7-not-valid-tip {
+        }
+
+        .wpcf7-response-output {
+          &.wpcf7-mail-sent-ok {
+          }
+        }
+
+        .ajax-loader {
+        }
+
+        .title {
+          font-size: 30px;
+          line-height: 35px;
+        }
+        .sub-title {
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+          font-size: 16px;
+          &.wpcf7-not-valid {
+          }
+
+          @include placeholder {
+          }
+        }
+        .btn-blue {
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  &.overlay-y {
+    background-color: rgba(255, 215, 0, 0.2);
+  }
+  &.overlay-black {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &.overlay-grad {
+    background: linear-gradient(0deg, rgba(255, 215, 0, 0.2), rgba(0, 0, 0, 0.2));
+  }
+}

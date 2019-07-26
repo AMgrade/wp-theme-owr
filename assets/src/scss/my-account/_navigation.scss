@@ -1,0 +1,198 @@
+.woocommerce-MyAccount-navigation {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-bottom: 5px;
+      margin-left: 40px;
+      position: relative;
+      transition: all 0.3s ease;
+      a {
+        font-family: "Assistant-Bold";
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #BDBDBD;
+      }
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        left: -40px;
+        top: 11px;
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group.svg") center no-repeat;
+        background-size: contain !important;
+      }
+      &:hover {
+        a {
+          color: #2D9CDB;
+        }
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--dashboard {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--campaigns {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-1.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-1.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--orders {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-2.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-2.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--downloads {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-3.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-3.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--edit-address {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-4.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-4.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--payment-methods {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-5.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-5.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--edit-account {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-6.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-6.svg") center no-repeat;
+        }
+      }
+    }
+    .woocommerce-MyAccount-navigation-link--customer-logout {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/grey/Group-7.svg") center no-repeat;
+      }
+      &:hover {
+        &:before {
+          background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-7.svg") center no-repeat;
+        }
+      }
+    }
+    .is-active {
+      a {
+        color: #2D9CDB;
+      }
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--dashboard {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group.svg") center no-repeat !important;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--campaigns {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-1.svg") center no-repeat !important;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--orders {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-2.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--downloads {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-3.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--edit-address {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-4.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--payment-methods {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-5.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--edit-account {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-6.svg") center no-repeat;
+      }
+    }
+    .is-active.woocommerce-MyAccount-navigation-link--customer-logout {
+      &:before {
+        background: url("/wp-content/themes/owr/assets/img/wo-menu-icons/blue/Group-7.svg") center no-repeat;
+      }
+    }
+  }
+}
+@media screen and (max-width:992px) {
+  .woocommerce-MyAccount-navigation {
+    margin-bottom: 30px;
+    ul {
+      li {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .woocommerce-MyAccount-navigation {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:520px) {
+  .woocommerce-MyAccount-navigation {
+    ul {
+      li {
+        &:before {
+          top: 6px;
+        }
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+

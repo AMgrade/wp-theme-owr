@@ -1,0 +1,126 @@
+.campaign-single-section {
+  .product-section__product-thumb {
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  .product-section__progress-bar {
+    margin-bottom: 30px;
+    .progress-price {
+      .current-price {
+        color: #000;
+        font-family: "Assistant-Bold";
+        font-size: 36px;
+        line-height: 37px;
+        margin-right: 20px;
+      }
+      .all-price {
+        color: #BDBDBD;
+        font-family: "Assistant-SemiBold";
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .progress {
+      margin: 20px 0;
+      .progress-bar {
+        background-color: $owr-main-style-color;
+      }
+    }
+  }
+  .product-section__donate-wrap {
+    margin-bottom: 40px;
+    .campaign-donate-btn {
+      width: 100%;
+    }
+    &:after {
+      display: block;
+      position: relative;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #E0E0E0;
+      bottom: -20px;
+      left: 0;
+    }
+  }
+  .product-section__author-info {
+    margin-bottom: 40px;
+    &:after {
+      display: block;
+      position: relative;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #E0E0E0;
+      bottom: -20px;
+      left: 0;
+    }
+    .author-info__post-date-created {
+      font-weight: normal;
+      line-height: normal;
+      font-size: 16px;
+      color: #828282;
+      margin-bottom: 15px;
+    }
+    .author-info__wrap {
+      display: flex;
+    }
+    .author-info__image {
+      width: 70px;
+      height: 70px;
+      margin-right: 28px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .author-info__bio {
+      span {
+        display: block;
+        line-height: normal;
+        font-size: 16px;
+        color: #AEAEAE;
+        position: relative;
+        margin-left: 20px;
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: -20px;
+          height: 11px;
+        }
+      }
+      .name {
+        font-weight: 600;
+        line-height: normal;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #000000;
+        margin-left: 0;
+      }
+      .category {
+        &:before {
+          width: 14px;
+          background: url("/wp-content/themes/owr/assets/img/campaign-cat.svg") center no-repeat;
+        }
+      }
+      .location {
+        &:before {
+          width: 8px;
+          background: url("/wp-content/themes/owr/assets/img/campaign-location.svg") center no-repeat;
+        }
+      }
+    }
+  }
+  .share-title {
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #828282;
+    margin-bottom: 15px;
+  }
+}

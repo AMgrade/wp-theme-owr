@@ -1,0 +1,147 @@
+/* Campaigns list */
+.campaign-create-post-btn {
+  margin-top: 32px;
+  a {
+    font-family: "Assistant-Bold";
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    width: 215px;
+    display: block;
+    padding: 8px 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+.campaign-list-posts__header {
+  padding: 17px 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 32px;
+  div {
+    font-family: "Assistant-Bold";
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #4F4F4F;
+  }
+}
+.campaign-list-posts__body {
+  margin-bottom: 15px;
+  div {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #464646;
+    text-align: left;
+    font-weight: 600;
+  }
+}
+.campaign-list-posts__post-name {
+  a {
+    font-family: "Assistant-Bold";
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #2D9CDB;
+  }
+}
+
+/* Campaign add/edit */
+.create-campaign-post__add-image {
+  #frontend_button {
+    width: 270px;
+    height: 210px;
+    display: block;
+    background: url("/wp-content/themes/owr/assets/img/featured-image.png") center no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+.create-campaign-post__image-wrapper {
+  width: 270px;
+  height: 210px;
+  display: none;
+  position: relative;
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+#postbox {
+  input,select {
+    border: 1px solid #BDBDBD;
+    height: 46px;
+    border-radius: 0;
+  }
+  textarea {
+    border: 1px solid #BDBDBD;
+  }
+  label {
+    font-size: 16px;
+    color: #4F4F4F;
+    font-weight: 600;
+  }
+  .select {
+    background: url('/wp-content/themes/owr/assets/img/arrow-down.svg') right center no-repeat;
+    .select-styled {
+      display: none;
+    }
+    select {
+      box-shadow: none;
+      background: transparent;
+      background-image: none;
+      -webkit-appearance: none;
+      outline: none;
+      cursor: pointer;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+    }
+  }
+  .form-group {
+    margin-bottom: 30px;
+  }
+  .post-add {
+    font-family: "Assistant-Bold";
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    width: 215px;
+    display: block;
+    padding: 8px 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: auto;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .campaign-list-posts__body div {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .campaign-list-posts__header div {
+    font-size: 15px;
+  }
+  .campaign-list-posts__post-name a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .campaign-list-posts__header {
+    display: none;
+  }
+}

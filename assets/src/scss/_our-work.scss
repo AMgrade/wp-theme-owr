@@ -1,0 +1,53 @@
+/* Headline section Google map style */
+.headline-section {
+  .google-map-wrap {
+    height: 100%;
+    width: 100%;
+  }
+}
+/* What we do Section style */
+.what-we-do-section {
+  .headline-section {
+    height: 295px;
+    .headline-text-wrap {
+      .headline-text {
+        p {
+          max-width: 1170px;
+          font-size: 30px;
+          line-height: 39px;
+          text-align: center;
+          color: #ffffff;
+          font-family: "Assistant-Bold";
+        }
+      }
+    }
+  }
+}
+/* Media query our work page style */
+@media screen and (max-width: 768px) {
+  .what-we-do-section {
+    .headline-section {
+      .headline-text-wrap {
+        .headline-text {
+          p {
+            font-size: 24px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .what-we-do-section {
+    .headline-section {
+      .headline-text-wrap {
+        .headline-text {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.donate-section {
+  .donate-wrap {
+    label {
+      font-family: 'Assistant-Bold';
+      font-size: 18px;
+      line-height: 24px;
+      color: #4F4F4F;
+      margin: 0 0 0 40px;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '-';
+        display: block;
+        left: -20px;
+        top: 0;
+        color: #4F4F4F;
+      }
+    }
+    .input-wrap {
+      width: 40px;
+      height: 40px;
+      input[type="radio"] {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        background-color: #fff;
+        border: 1px solid #E0E0E0;
+        cursor: pointer;
+        -webkit-appearance: none;
+        outline: none;
+        border-radius: 0;
+        &:after {
+          display: block;
+          content: '';
+          position: relative;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: transparent;
+          border-radius: 0;
+        }
+        &:checked {
+          &:after {
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.3);
+            background-color: $owr-main-style-color;
+            transition: all .3s
+          }
+          &:before {
+            display: block;
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 15px;
+            top: 11px;
+            left: 9px;
+            background: url('/wp-content/themes/owr/assets/img/checkbox-arrow.svg') center no-repeat;
+            z-index: 10;
+          }
+        }
+      }
+    }
+    .text-input-wrap {
+      input {
+        height: 40px;
+        border-radius: 0;
+      }
+    }
+    .donate-btn {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .donate-section {
+    .donate-wrap {
+      label {
+        margin: 0 0 0 15px;
+        &:before {
+          left: -10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .donate-section {
+    .donate-wrap {
+      .input-wrap,
+      .label-wrap {
+        margin-bottom: 20px;
+      }
+      .media-label-position {
+        position: relative;
+        justify-content: center !important;
+        .label-wrap {
+          position: absolute;
+          margin: 0;
+          top: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50px;
+          text-align: center;
+          label {
+            margin: 0;
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+      .form-wrap-media {
+        padding-top: 25px;
+      }
+    }
+  }
+}

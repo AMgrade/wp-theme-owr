@@ -1,0 +1,55 @@
+body {
+  font-family: 'Assistant-Regular';
+  background-color: $main-white-bg-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Assistant-Bold";
+}
+.page-content {
+  padding-top: 70px;
+}
+input,
+textarea,
+button {
+  box-shadow: unset !important;
+}
+.content.content-wrap {
+  position: relative;
+  .sticky-btn {
+    position: fixed;
+    right: 0;
+    top: 47%;
+    z-index: 9999;
+    width: auto;
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    -webkit-transform-origin: 100% 100%;
+    padding: 0.375rem 1.75rem;
+    background-color: red;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    text-underline: none;
+  }
+}
+
+.headline-section.button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    width: auto;
+  }
+}

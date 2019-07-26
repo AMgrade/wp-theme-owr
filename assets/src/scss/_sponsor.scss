@@ -1,0 +1,208 @@
+.current-mission-section {
+  .headline-section {
+    margin-bottom: 40px;
+    height: auto;
+    .media-preview-wrap {
+      min-height: unset;
+      max-height: unset;
+    }
+  }
+  .section-content {
+    color: #6B6B6B;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  .progress-price {
+    .current-price {
+      color: #000;
+      font-family: "Assistant-Bold";
+      font-size: 36px;
+      line-height: 37px;
+      margin-right: 20px;
+    }
+    .all-price {
+      color: #BDBDBD;
+      font-family: "Assistant-SemiBold";
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .progress {
+    margin: 20px 0;
+    .progress-bar {
+      background-color: $owr-main-style-color;
+    }
+  }
+}
+.donate-section {
+  padding: 0;
+}
+.efforts-section {
+  .link-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    transition: all 0.5s ease;
+    .title {
+      font-family: "Assistant-Bold";
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    .hidden-description {
+      display: none;
+      text-align: center;
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+    &:hover {
+      background: #2D9CDB;
+      text-decoration: none;
+      .title {
+        display: none;
+      }
+      .hidden-description {
+        display: block;
+      }
+    }
+  }
+}
+.sponsor-section,
+.volunteer-section,
+.donate-section {
+  input {
+    height: 40px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  .owr-btn {
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+  }
+  .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    color: #495057;
+    width: 100%;
+    height: 40px;
+  }
+  .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $main-white-bg-color;
+    padding: .375rem .75rem;
+    transition: all 0.3s ease;
+    border: 1px solid #ced4da;
+    &:after {
+      content:"";
+      width: 18px;
+      height: 11px;
+      background: url('/wp-content/themes/owr/assets/img/select-arrow-down.svg') center no-repeat;
+      position: absolute;
+      top: 14px;
+      right: 10px;
+    }
+    &:before {
+      content:"";
+      position: absolute;
+      right: -1px;
+      top: -1px;
+      width: 40px;
+      height: 40px;
+      background-color: $owr-main-style-color;
+    }
+  }
+  .active {
+    transition: all 0.3s ease;
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+  .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $main-white-bg-color;
+    border-right: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    li {
+      margin: 0;
+      padding: 12px 0;
+      text-indent: 15px;
+      transition: all 0.15s ease-in;
+      &:hover {
+        color: $owr-main-style-color;
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+  .ajax-loader,
+  .wpcf7-not-valid-tip {
+    display: none !important;
+  }
+  .wpcf7-response-output {
+    margin: 2em 0;
+    border: none;
+    padding: 0;
+  }
+  .wpcf7-validation-errors {
+    color: $error-color;
+  }
+  .wpcf7-mail-sent-ok {
+    color: #398f14;
+  }
+  .wpcf7-not-valid {
+    border: 1px solid $error-color;
+  }
+  .top-row-margin {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sponsor-section,
+  .volunteer-section {
+    input,
+    .select {
+      margin-bottom: 20px;
+    }
+  }
+  .efforts-section {
+    .link-block {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #missionLikeWrap {
+    .select {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.woocommerce {
+  .woocommerce-MyAccount-content {
+    table.account-orders-table {
+      border: none;
+      thead {
+        th.woocommerce-orders-table__header {
+          span {
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #464646;
+          }
+        }
+      }
+      .woocommerce-orders-table__cell {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #464646;
+        padding: 10px 8px;
+      }
+      .woocommerce-orders-table__cell-order-number {
+        a {
+          font-weight: 600;
+          color: $owr-main-style-color;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+      }
+      .woocommerce-orders-table__cell-order-actions {
+        a {
+          width: 100px;
+          color: #fff;
+          display: block;
+          margin-bottom: 0;
+          padding: 8px 5px;
+          font-family: 'Assistant-Bold';
+          font-size: 18px;
+          line-height: 24px;
+          text-align: center;
+          border: none;
+          background-color: #2D9CDB;
+          border-radius: 0;
+          text-transform: uppercase;
+          cursor: pointer;
+          outline: none;
+          box-shadow: none;
+          transition: opacity 0.4s ease;
+        }
+      }
+    }
+  }
+}
+form#order_review #payment_method_stripe {
+  margin: 0 !important;
+}
+#order_review {
+  #payment {
+    #place_order {
+      background: $owr-main-style-color;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .woocommerce {
+    .woocommerce-MyAccount-content {
+      table.account-orders-table {
+        thead {
+          th.woocommerce-orders-table__header {
+            span {
+              font-size: 16px;
+            }
+          }
+        }
+        .woocommerce-orders-table__cell {
+          font-size: 16px;
+        }
+        .woocommerce-orders-table__cell-order-number {
+          a {
+            font-size: 16px;
+          }
+        }
+        .woocommerce-orders-table__cell-order-actions {
+          a {
+            width: 100%;
+            font-size: 16px;
+            line-height: 13px;
+          }
+        }
+      }
+    }
+  }
+}

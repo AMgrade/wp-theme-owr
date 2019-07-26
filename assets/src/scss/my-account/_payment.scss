@@ -1,0 +1,55 @@
+.woocommerce-MyAccount-paymentMethods.account-payment-methods-table {
+  border: none !important;
+  .woocommerce-PaymentMethod--actions {
+    a {
+      width: 100px;
+      color: #fff;
+      font-family: 'Assistant-Bold';
+      font-size: 16px;
+      line-height: 14px;
+      text-align: center;
+      border: none;
+      background-color: #2D9CDB;
+      border-radius: 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+      transition: opacity 0.4s ease;
+    }
+  }
+}
+.payment-method-btn {
+  color: #fff !important;
+  background: $owr-main-style-color !important;
+  border-radius: 0 !important;
+  font-family: "Assistant-Bold";
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #fff;
+  width: 215px;
+  display: block;
+  padding: 8px 5px !important;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: auto;
+  height: 40px;
+}
+.woocommerce-MyAccount-content {
+  #add_payment_method {
+    .woocommerce-Button {
+      font-family: "Assistant-Bold";
+      font-size: 18px;
+      background-color: $owr-main-style-color;
+      line-height: 24px;
+      color: #fff;
+      width: 215px;
+      display: block;
+      padding: 8px 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-left: auto;
+      height: 40px;
+    }
+  }
+}

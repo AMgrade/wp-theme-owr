@@ -1,0 +1,51 @@
+.sign-up-section {
+  padding: 100px 0 100px;
+  .vb-registration-form {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    label {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 16px;
+      color: #4F4F4F;
+    }
+    .help-block {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 12px;
+      color: #BDBDBD;
+    }
+    #vb_confirm_pass {
+      margin-bottom: 50px;
+    }
+    .sign-up-btn {
+      width: 100%;
+      font-family: 'Assistant-Bold';
+      font-size: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background: $owr-main-style-color;
+      border-radius: 0;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+      transition: opacity 0.4s ease;
+      margin-bottom: 14px;
+    }
+    .result-message {
+
+    }
+  }
+  .help-message {
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #BDBDBD;
+    a {
+      color: $owr-main-style-color;
+      text-decoration: underline;
+    }
+  }
+}

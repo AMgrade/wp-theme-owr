@@ -1,0 +1,21 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>button</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(69 -935)">
+<g id="button">
+<g id="Rectangle 4.5">
+<use xlink:href="#path0_fill" transform="translate(-69 935)" fill="#2D9CDB"/>
+</g>
+<g id="Rectangle 7">
+<use xlink:href="#path1_fill" transform="translate(-64 944.375)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 7">
+<use xlink:href="#path1_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -58.375 940)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 10C 0 4.47715 4.47715 0 10 0C 15.5228 0 20 4.47715 20 10C 20 15.5228 15.5228 20 10 20C 4.47715 20 0 15.5228 0 10Z"/>
+<path id="path1_fill" d="M 0 0.625C 0 0.279822 0.279822 0 0.625 0L 9.375 0C 9.72018 0 10 0.279822 10 0.625C 10 0.970178 9.72018 1.25 9.375 1.25L 0.625 1.25C 0.279822 1.25 0 0.970178 0 0.625Z"/>
+</defs>
+</svg>

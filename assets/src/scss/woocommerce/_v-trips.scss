@@ -1,0 +1,74 @@
+.woocommerce-message {
+  border-top-color: $owr-main-style-color;
+}
+.woocommerce-message::before {
+  color: $owr-main-style-color;
+}
+
+.v-trips-item {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+.v-trips-item__header {
+  height: 223px;
+  position: relative;
+}
+.v-trips-item__price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 145px;
+  height: 40px;
+  background: $owr-main-style-color;
+  font-family: "Assistant-Bold";
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.v-trips-item__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 0.5px solid #C6C6C6;
+  height: 290px;
+  overflow: hidden;
+  a > div {
+    margin-bottom: 15px;
+  }
+}
+.v-trips-item__title {
+  font-family: "Assistant-Bold";
+  color: $owr-main-style-color;
+  font-size: 24px;
+  min-height: 70px;
+  max-height: 70px;
+  overflow: hidden;
+}
+.v-trips-item__sub-title {
+  font-size: 16px;
+  color: #AEAEAE;
+  min-height: 24px;
+  max-height: 24px;
+  overflow: hidden;
+}
+.v-trips-item__content {
+  font-size: 16px;
+  color: #3B3B3B;
+  margin-bottom: 40px !important;
+}
+.v-trips-item__button {
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto 20px;
+  position: absolute;
+  bottom: 0;
+  a {
+    width: 100%;
+  }
+}

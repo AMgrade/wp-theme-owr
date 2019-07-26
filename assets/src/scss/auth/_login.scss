@@ -1,0 +1,144 @@
+.sign-in-section {
+  padding: 150px 0 200px;
+  .section-title {
+    h2{
+      margin-bottom: 40px;
+      &:after {
+        margin: 0 auto;
+        bottom: -10px;
+      }
+    }
+  }
+  /*Login*/
+  #loginform {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    label {
+      font-weight: 600;
+      font-size: 16px;
+      color: #4F4F4F;
+    }
+    input {
+      height: 47px;
+      border: 1px solid #BDBDBD;
+    }
+    p {
+      margin-bottom: 30px;
+      label,
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+    .login-remember {
+      label,
+      input {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        margin: 0;
+      }
+      input {
+        margin-right: 10px;
+      }
+    }
+    .login-username,
+    .login-password {
+      input {
+        padding: 10px;
+      }
+    }
+    .login-submit {
+      margin-bottom: 40px;
+      input {
+        font-family: 'Assistant-Bold';
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: $owr-main-style-color;
+        border-radius: 0;
+        cursor: pointer;
+        outline: none;
+        box-shadow: none;
+        transition: opacity 0.4s ease;
+      }
+    }
+  }
+  .or-line {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto 35px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E0E0E0;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background: #E0E0E0;
+      top: 50%;
+      left: 0;
+    }
+    &:after {
+      left: auto;
+      right: 0;
+    }
+  }
+  .social-buttons {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    a {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        display: block;
+        width: 100%;
+
+      }
+    }
+  }
+  /* Reset password */
+  .forget-password {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    a {
+      font-size: 16px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #BDBDBD;
+    }
+  }
+  /* Logout */
+  .logout-text {
+    font-size: 16px;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 70px;
+  }
+  .logout-btn {
+    display: block;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+    height: 47px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 34px;
+  }
+}
+/* Reset password page */
+.owr-reset-password-btn {
+    color: #fff;
+}

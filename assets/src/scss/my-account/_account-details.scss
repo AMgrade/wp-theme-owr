@@ -1,0 +1,46 @@
+.woocommerce-EditAccountForm {
+  input {
+    height: 46px;
+    padding: 5px;
+    border: 1px solid #BDBDBD;
+  }
+  label,span {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+    color: #4F4F4F;
+  }
+  label {
+    margin-bottom: 3px;
+    line-height: normal !important;
+  }
+  span {
+    font-size: 14px;
+  }
+  fieldset {
+    margin-top: 50px;
+    legend {
+      font-family: "Assistant-Bold";
+      line-height: normal;
+      font-size: 24px;
+      text-align: justify;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+  .owr-save-ac-details-btn {
+    background: $owr-main-style-color !important;
+    color: #fff !important;
+    margin-left: auto !important;
+    display: block !important;
+    border-radius: 0 !important;
+    font-family: "Assistant-Bold";
+    font-size: 18px !important;
+    line-height: 24px !important;
+    width: 215px;
+    padding: 8px 5px !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 40px !important;
+  }
+}

@@ -1,0 +1,125 @@
+.our-history-section {
+  .headline-section {
+    margin-bottom: 40px;
+    height: auto;
+    .media-preview-wrap {
+      min-height: unset;
+      max-height: unset;
+    }
+  }
+}
+.our-team-section {
+  padding: 0 0 40px;
+}
+.team-member {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 40;
+  .member-foto {
+    height: 240px;
+    overflow: hidden;
+    width: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .member-name {
+    background-color: $owr-main-style-color;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 30px;
+      color: $main-white-font-color;
+    }
+    .name {
+      display: inline-block;
+    }
+  }
+  .member-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: $owr-main-style-color;
+    transition: opacity 0.3s ease;
+    padding: 15px 30px;
+  }
+  &:hover .member-info {
+    opacity: 1;
+  }
+  .member-description {
+    text-align: left;
+    color: $main-white-font-color;
+  }
+  .linkedin-btn {
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: auto 0;
+    background: url('/wp-content/themes/owr/assets/img/linkedin-button.png') center no-repeat;
+  }
+}
+
+/* Media query About page style */
+@media screen and (max-width: 1200px) {
+  .team-member {
+    & > .member-name {
+      display: none;
+    }
+    .member-name {
+      margin-bottom: 20px;
+      span {
+        font-size: 24px;
+      }
+    }
+    .member-info {
+      position: static;
+      opacity: 1;
+      .linkendin-btn-wrap {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-member {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    .member-foto {
+      height: 360px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-member {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .team-member {
+    .member-foto {
+      height: 280px;
+    }
+    .member-info {
+      padding: 15px 15px;
+    }
+    .member-name {
+      margin-bottom: 10px;
+      span {
+        font-size: 22px;
+      }
+    }
+  }
+}
