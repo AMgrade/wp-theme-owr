@@ -421,6 +421,6 @@ $owr_support_link         = get_field( 'owr_support_link', $post_id );
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJS4h0uZ0D9S9kBJ81FunHQYykD8xBZCQ&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script>
 
 <?php get_footer(); ?>
